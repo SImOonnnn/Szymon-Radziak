@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="number" name="liczba1" placeholder="podaj liczbe 1"/>
+        <input type="number" name="liczba2" placeholder="podaj liczbe 2"/>
+    </div>
+    <div>
+        <button>suma</button>
+        <button>roznica</button>
+    </div>
+    <div>tu bedzie wynik</div>
+    <script>
+        // Zadanie 3 -------------------------------------------------
+         const btns = document.querySelectorAll('button');
+        const input1 = document.querySelector('input[name="liczba1"]')
+        const input2 = document.querySelector('input[name="liczba2"]')
+        const divResults = document.querySelector('div+div+div')
+        const suma = function (l1, l2)  {
+            return l1 + l2;
+        }
+        const odejmowanie = function (l1, l2)  {
+            return l1 - l2;
+        }
+        btns[0].addEventListener('click',()=>{
+            const liczba1 = input1.value*1;
+            const liczba2 = input2.value*1;
+            divResults.textContent = 'suma wynosi:' + suma(liczba1, liczba2);
+        })
+
+        btns[1].addEventListener('click',()=>{
+            const liczba1 = input1.value*1;
+            const liczba2 = input2.value*1;
+            divResults.textContent = 'odejmowanie wynosi:' + odejmowanie(liczba1, liczba2);
+        })
+     // Zadanie 1 --------------------------------------
+        var b=prompt("podaj pierwsza liczbe ktora chcesz sprawdzic");
+        if(liczbaPierwsza(b)==true)
+            document.write("Podana liczba jest liczbą pierwszą");
+        else
+            document.write("Podana liczba nie jest liczbą pierwszą");
+   
+        function liczbaPierwsza(liczba) {
+            let t = 0;
+            for(let i = 1; i <= liczba; i++) {
+                if (liczba%i==0)
+                    t++;
+            }
+            if(t==2)
+                return true;
+            else
+                return false;
+        }
+       
+        var a=prompt("podaj liczbe ktora ma byc w przedziale");
+    //zadanie 2 ----------------------------------------------------------
+        
+        if (a>=1 && a<=100) {
+        document.write("\n true");
+       }
+       else{
+           document.write("\n false");
+       }
+    </script>
+   <!-- Szymon Radziak -->
+</body>
+</html>
