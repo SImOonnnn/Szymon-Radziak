@@ -1,0 +1,99 @@
+<body>
+	<!-- ZADANIE 1 -->
+	<div>
+		<ul type="I">
+			<li>Wprowadzenie</li>
+				<ul type="1">
+					<li>Składnia języka HTML</li>
+						<ul type="a">
+							<li>Znaczniki i elementy</li>
+							<li>Struktura dokumentu HTML</li>
+							<li>Pierwsza strona WWW</li>
+						</ul>
+					<li value="7">Kaskadowe arkusze stylów</li>
+						<ul type="a">
+							<li>Struktura i wygląd dokumentu</li>
+							<li>Dołączanie stylów do dokumentów</li>
+								<ul type="squerl">
+									<li>Style zewnętrzne</li>
+									<li>Style wewnętrzne</li>
+								</ul>
+							<li>Domyślny język stylów</li>
+						</ul>
+					<li>Składnia kaskoadowych arkuszy stylów</li>
+				</ul>
+			<li>Dodatki</li>
+				<ul  type="A">
+					<li>Instalacja oprogramowania</li>
+				</ul>
+			<li>Skorowidz</li>
+		</ul>
+	</div>
+	<!-- ZADANIE 2 -->
+	<div>
+		<table BORDER=1>
+			<caption>Tabela 1</caption>
+			<tr>
+				<td colspan="4">Komorka 1</td>
+			</tr>
+			<tr>
+				<td colspan="2">Komorka 2</td>
+				<td colspan="2">Komorka 3</td>
+			</tr>
+			<tr>
+				<td>Komorka 4</td>
+				<td colspan="2">Komorka 5</td>
+				<td>Komorka 6</td>
+			</tr>
+		</table>
+		<br>
+		<table BORDER=1>
+			<caption>Tabela 2</caption>
+			<tr>
+				<td rowspan="6">Komorka 1</td>
+				<td rowspan="3">Komorka 2</td>
+				<td>Komorka 3</td>
+			</tr>
+			<tr>
+				<td rowspan="3">Komorka 4</td>
+				<td>Komorka 5</td>
+			</tr>
+			<tr>
+				<td>Komorka 6</td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+			</tr>
+		</table>
+		<br>
+		<table BORDER=1>
+			<caption>Tabela 3</caption>
+			<tr>
+				<td rowspan="3" colspan="3">Komorka 1</td>
+				<td>Komorka 2</td>
+				<td>Komorka 3</td>
+				<td>Komorka 4</td>
+				<td  rowspan="2">Komorka 5</td>
+			</tr>
+			<tr>
+				<td  colspan="2">>Komorka 8</td>
+				<td>Komorka 9</td>
+			</tr>
+			<tr>
+				<td>Komorka 10</td>
+			</tr>
+			<tr>
+				<td>Komorka 6</td>
+				<td  colspan="2">>Komorka 7</td>
+				
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+			</tr>
+		</table>
+	</div>
+</body>
