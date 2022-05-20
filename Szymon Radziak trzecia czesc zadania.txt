@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="lol"></div>
+<script>
+    const per = []
+    var suma = 0
+    const o =document.querySelector('div.lol')
+    for(let i = 0; i<=100;i++){
+        per[i] = Math.round(Math.random()*100)
+
+    }
+    document.write(per.join())
+    for(let i = 0; i<=100;i++){
+       suma = suma + per[i]
+        
+
+    }
+    document.write('wynik to:' + suma)
+
+    
+</script>
+</body>
+</html>
