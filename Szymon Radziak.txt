@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+  
+    <form action = "">
+
+        <label for = "ocena1">Pierwsza ocena: </label>
+        <input type = "number" name = "ocena1"><br>
+        <label for = "ocena2">Druga ocena: </label>
+        <input type = "number" name = "ocena2"><br>
+        <label for = "ocena3">Trzecia ocena: </label>
+        <input type = "number" name = "ocena3"><br>
+        <label for = "ocena4">Czwarta ocena: </label>
+        <input type = "number" name = "ocena4"><br>
+
+        <button>Oblicz</button>
+    </form>
+    <div class = "idv"></div>
+    <script>
+        const formularz = document.querySelector('form');
+        let ocena1 = document.querySelector('input[name = "ocena1"]');
+        let ocena2 = document.querySelector('input[name = "ocena2"]');
+        let ocena3 = document.querySelector('input[name = "ocena3"]');
+        let ocena4 = document.querySelector('input[name = "ocena4"]');
+        const div = document.querySelector('.idv')
+        let srednia
+
+        formularz.addEventListener('submit', function(e) {
+            e.preventDefault();
+            if ((ocena1.value < 1)||(ocena1.value > 6)||(ocena2.value < 1)||(ocena2.value > 6)||(ocena3.value < 1)||(ocena3.value > 6)||(ocena4.value < 1)||(ocena4.value > 6)){
+                div.textContent = "Błędne dane";
+            }
+            else {
+                srednia = (ocena1.value*1 + ocena2.value*1 + ocena3.value*1 + ocena4.value*1)/4
+                div.textContent = srednia;
+            }
+
+        //Szymon Radziak    
+        })
+    </script>
+</body>
+</html>
