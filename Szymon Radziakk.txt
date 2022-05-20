@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var liczba = 101;
+        przedzial(liczba);
+    function przedzial(tab){
+        
+            if(tab > = 0 && tab <= 100){
+                document.write(" zaiwera sie.")
+            }
+            else document.write(" nie zawiera sie.")
+    }
+</script>
+</body>
+</html>
