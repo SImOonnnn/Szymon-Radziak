@@ -1,0 +1,57 @@
+#include <iostream>
+using namespace std;
+
+// jak pan to bedzie sprawdzal to niech pan nie zwraca uwagi na nazwy zmiennych itp bo zmienilem specjalnie na normalne bo były nieładne i mogą byc błędy bo moglem gdzies zle zmienic czy cos bo duzo tego troche było i moglem cos przeoczyc
+// Szymon Radziak
+class Per{
+public:
+    int lol;
+    string lol0;
+    float lol1;
+
+    void Wczytaj() {
+        cout << "Podaj ilu masz lol: ";
+        cin >> lol;
+        cout << "Podaj imie twojego lol: ";
+        cin >> lol0;
+        cout << "Podaj dlugosc jego lol XDDD: ";
+        cin >> lol1;
+    }
+
+    Per(int its=54, string itss="Andrzej", float dts=690.532) {
+        lol = its;
+        lol0 = itss;
+        lol1 = dts;
+    }
+
+    void Wypisz();
+
+    friend class TwojaMama;
+
+    //~Per();
+};
+
+class TwojaMama{
+public:
+    int ilemalol = 5;
+    string tak;
+};
+
+
+void Per::Wypisz()
+{
+    cout << "Tylu masz lol: " << iloscTwoichlol;
+    cout << "Podane imie twojego lol: " << ImieTwojegolol;
+    cout << "lol to: " << DlugoscTwojegolol;
+}
+
+
+int main()
+{
+    Per l1,l2;
+    l1.Wczytaj();
+    l2.Wczytaj();
+    l2.Wypisz();
+
+    return 0;
+}
