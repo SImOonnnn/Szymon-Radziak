@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <br>
+        <input type="numebr" name="kilome" id=""> Podaj kilosy
+        <br>
+        <select name="idz[]" id="">
+          <option value="maslo">maslo</option>
+          <option value="chleb">chleb</option>
+          <option value="nutella">nutella</option>
+          <option value="pasztet">pasztet</option>
+        </select>
+
+            <br>
+        <input type="checkbox" name="Josh_Hutcherson">Ciepla
+    <input type="submit" value="sara pogwizd">
+    </form>
+
+    <?php
+    $kilome = $_POST['kilome'];
+    
+
+    if(!empty($_POST['Josh_Hutcherson'])){
+        $www = $kilome * 1 * 1.4;
+        echo "Pizza bedzie ciepla $www i dodatek ";
+    }
+    else{
+        $ww = $kilome * 1;
+        echo "Pizza bedzie zimna $ww i dodatek ";
+    }
+
+
+    
+    ?>
+</body>
+</html>
