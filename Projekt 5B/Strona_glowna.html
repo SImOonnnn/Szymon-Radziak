@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: antiquewhite;
+        }
+        .myaccount{
+            position: relative;
+        }
+        .modal{
+            display: none;
+            position: absolute;
+            right: 0;
+            margin-right: 1rem;
+            margin-top: 3rem;
+        }
+        
+        .show{
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            justify-content: space-around;
+            width: 100%;
+            display: flex;
+        }
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        ul li{
+            display: inline;
+        }
+        nav{
+            width: 80%;
+            padding: 1rem 5rem;
+        }
+        .logo{
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <header> 
+        <nav><ul>
+            <li>
+                <a href="Strona_glowna.html">Strona glowna</a>
+            </li>
+            <li>
+                <a href="teamy.php">Teamy</a>
+            </li>
+            <li>
+                <a href="Zawodnicy.html">Zawodnicy </a>
+            </li>
+        </ul></nav>
+        <button class="myaccount" id="myaccount"> Click!
+            <span></span> <img src="" alt="">
+        </button>
+        <div class="modal" id="modal">
+            <a href="Moje kontoo.php">Moje konto</a>
+
+            <a href="Logout.php">get outta here</a>
+         </div>
+    </header>
+
+          
+
+    <main>
+        <div class="logo">
+            <img src="https://sport.wprost.pl/_thumb/84/a9/2ec95c10d7b3443f2ccba4dd4ca6.png" alt="">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem consequuntur impedit officia, corporis maxime eveniet. Magni mollitia a corporis aut odio aliquam inventore, sapiente voluptatibus, voluptate voluptatum delectus necessitatibus, nulla ipsam impedit laudantium fugiat deserunt veniam consequuntur tempora minus. Voluptatum, eveniet quis debitis accusantium doloremque rem? Molestias id maxime reprehenderit deserunt, asperiores dicta numquam placeat eum consectetur magnam ea laboriosam non commodi harum voluptates repudiandae incidunt odit molestiae. Sed iusto impedit vitae earum distinctio modi cumque at optio illo laudantium quos dignissimos, voluptate veniam rem suscipit, iure harum temporibus esse sit quod! Animi voluptatem amet praesentium vitae nihil, asperiores consequuntur ipsum deserunt eligendi aperiam inventore doloribus numquam aliquid mollitia alias blanditiis, delectus temporibus nemo omnis qui. Ratione molestias quas temporibus consequatur alias at voluptate accusamus placeat et omnis natus harum, adipisci eaque similique quos incidunt repudiandae enim nesciunt. Accusamus magnam eaque, corrupti quas veniam alias sequi libero dolor? Tempore dolorum aut, autem blanditiis totam suscipit distinctio voluptatum, itaque numquam, ipsam voluptate. Soluta atque saepe excepturi odio aperiam ea, animi labore repellendus temporibus quisquam? Asperiores repellat natus temporibus magni deleniti non sed ab doloribus officiis suscipit velit atque, ullam optio quisquam perspiciatis impedit, id dignissimos, nesciunt molestiae. Iure porro atque deserunt eligendi reprehenderit, sapiente ad cum ratione fugiat suscipit commodi. Dolor sunt rem voluptatum sapiente beatae ducimus doloremque unde recusandae cum ea est rerum, repellat consequatur culpa sint pariatur debitis laboriosam exercitationem iste facere voluptas. Corrupti, soluta. Saepe quidem dolorum corporis quo qui esse nemo ratione tempore, nisi dolore laudantium commodi itaque accusantium molestias excepturi ipsum praesentium culpa obcaecati, aut ipsa tempora doloribus. Repudiandae voluptatum at enim consequatur odio! Adipisci, alias tempore. At dolores odio quas qui ducimus totam, quia laudantium praesentium. Similique, nobis. Quo laborum recusandae alias eos, quae aspernatur aliquid possimus libero cumque perspiciatis dolores ducimus voluptatem sequi, repudiandae debitis nemo ullam maxime accusamus aperiam, dolorum eveniet soluta tempore commodi corporis! Exercitationem, nostrum ab? Nam pariatur eaque aut, earum facere, praesentium odit deleniti porro et cupiditate consectetur ratione quia vero quos itaque voluptatibus iste autem explicabo, nisi sequi voluptate provident id illo labore. Dicta adipisci ea dignissimos illum sunt placeat, ullam laudantium quisquam nostrum voluptate sed assumenda quo rerum, totam doloremque, a similique? Cumque, enim in architecto veritatis velit, officia praesentium sunt facilis veniam inventore maxime et recusandae libero rem. Voluptas tempora dolorem omnis, fugit laborum eligendi molestias et autem nobis in at? Facere placeat, aliquam veritatis dolorem eligendi voluptates possimus recusandae expedita! Temporibus quidem quam non eaque sed vero unde quos saepe tempore iure, facere quisquam quaerat ipsam facilis laboriosam eligendi labore commodi est adipisci. Autem ratione ex libero. Tempora eaque laboriosam debitis sapiente veniam neque adipisci, aliquam ullam hic nostrum. Voluptas reiciendis suscipit iusto! Et cumque repudiandae corporis ducimus dolorem, eos distinctio ratione optio recusandae officiis! Atque vel, quas recusandae sint ab qui voluptate omnis harum nulla deleniti labore, fugit unde asperiores quibusdam reiciendis aperiam et commodi. Magni quas modi, eius incidunt harum, et debitis facere quo cumque beatae deserunt, inventore molestias in corrupti dolores eaque quia.
+        </div>
+    </main>
+
+
+    <footer>&copy; created by Szymon Radziak</footer>
+
+
+    <script>
+     
+            const modal = document.getElementById('modal');
+            const myaccount = document.getElementById('myaccount');
+            myaccount.addEventListener( 
+                "click", ()=>{
+                    modal.classList.toggle("show");
+                }
+            )
+        
+    </script>
+</body>
+</html>

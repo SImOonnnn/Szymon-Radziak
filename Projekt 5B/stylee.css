@@ -1,0 +1,182 @@
+body{
+    background-color: chartreuse;
+    position: relative;
+}
+.klub1{
+   
+}
+.wszystkie{
+
+}
+.klub{
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    border: 2px solid black;
+    height: 160px;
+    width: 550px;
+    border-radius: 16px;
+    margin-top: 12px;
+    overflow: hidden;
+}
+.przycisk{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top-right-radius: 16px;
+    background-color: green;
+    border: none;
+    padding: 1rem 1rem;
+}
+
+.mojekonto{
+    display: none;
+    background-color: pink;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    border: 3px solid black;
+    width: 1500px;
+    height: 800px;
+    overflow: hidden;
+}
+.mojekonto img{
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.konto{
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    border: 1px solid black;
+    height: 160px;
+    width: 550px;
+    border-radius: 16px;
+    margin-top: 12px;
+    background-color: pink;
+
+   
+}
+.klub img{
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.abc{
+    display: none;
+    background-color: blue;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    border: 3px solid black;
+    width: 900px;
+    height: 900px;
+}
+.abc img{
+    bottom: 20%;
+    left: 3%;
+    width: 350px;
+    height: 350px;
+    margin-top: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.abc1{
+    display: none;
+    background-color: gold;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    border: 3px solid black;
+    width: 900px;
+    height: 900px;
+}
+.abc1 img{
+    bottom: 20%;
+    left: 3%;
+    width: 350px;
+    height: 350px;
+    margin-top: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.abc2{
+    display: none;
+    background-color: aqua;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    border: 3px solid black;
+    width: 900px;
+    height: 900px;
+}
+.abc2 img{
+    bottom: 20%;
+    left: 3%;
+    width: 350px;
+    height: 350px;
+    margin-top: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.abc3{
+    display: none;
+    background-color: orange;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    border: 3px solid black;
+    width: 900px;
+    height: 900px;
+}
+.abc3 img{
+    bottom: 20%;
+    left: 3%;
+    width: 350px;
+    height: 350px;
+    margin-top: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pilkarze{
+    background-color: blue;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    border: 3px solid black;
+    width: 900px;
+    height: 754px;
+}
+.pilkarze2{
+    background-color: darkmagenta;
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+    border: 3px solid black;
+    width: 850px;
+    height: 500px;
+}
+.pilkarz{
+    color: white;
+    border: 3px solid black;
+    width:  100px;
+    height: 120px;
+    display: flex;
+}
+.pilkarz img{
+    width: 100px;
+    height: 100px;
+
+}
+
